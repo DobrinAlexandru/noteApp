@@ -44,17 +44,10 @@ public class MyDialog extends Activity {
 				// TODO Auto-generated method stub
 				String str = edt.getText().toString();
 				if(str.length() > 0){
-					/*BackgroundMail.newBuilder(MyDialog.this)
-							.withUsername("alx.dobrin@gmail.com")
-							.withPassword("alexandru333")
-							.withMailto("do@any.do")
-							.withType(BackgroundMail.TYPE_PLAIN)
-							.withSubject(str)
-							.withBody(str)
-							.send();*/
+					
 					BackgroundMail bm = new BackgroundMail(MyDialog.this);
 					bm.setGmailUserName("alx.dobrin@gmail.com");
-					bm.setGmailPassword("alexandru333");
+					bm.setGmailPassword("");
 					bm.setMailTo("do@any.do");
 					bm.setFormSubject(str);
 					bm.setFormBody(str);
@@ -83,7 +76,7 @@ public class MyDialog extends Activity {
 			String str = extras.getString("text");
 			BackgroundMail bm = new BackgroundMail(MyDialog.this);
 			bm.setGmailUserName("alx.dobrin@gmail.com");
-			bm.setGmailPassword("alexandru333");
+			bm.setGmailPassword("");
 			bm.setMailTo("do@any.do");
 			bm.setFormSubject(str);
 			bm.setFormBody(str);
