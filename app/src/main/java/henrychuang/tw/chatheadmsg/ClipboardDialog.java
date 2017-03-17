@@ -49,7 +49,7 @@ public class ClipboardDialog extends Activity {
                     if (clipBoardText.length() > 0) {
                         BackgroundMail bm = new BackgroundMail(ClipboardDialog.this);
                         bm.setGmailUserName("alx.dobrin@gmail.com");
-                        bm.setGmailPassword("alexandru333");
+                        bm.setGmailPassword("");
                         bm.setMailTo("do@any.do");
                         bm.setFormSubject(str);
                         bm.setFormBody(clipBoardText);
