@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:background="#FF00ADEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:id="@+id/edit_tag"
+            android:gravity="center_vertical"
+            android:hint="Add tag/title(optional)..." />
+
+        <Button
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:id="@+id/save_info"
+            android:text="SAVE" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
